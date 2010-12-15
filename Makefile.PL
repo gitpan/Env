@@ -22,7 +22,7 @@ my %WriteMakefileArgs = (
   'PREREQ_PM' => {
     'Tie::Array' => '0'
   },
-  'VERSION' => '1.01',
+  'VERSION' => '1.02',
   'test' => {
     'TESTS' => 't/*.t'
   }
@@ -44,6 +44,9 @@ unless ( eval { ExtUtils::MakeMaker->VERSION(6.56) } ) {
 
 delete $WriteMakefileArgs{CONFIGURE_REQUIRES}
   unless eval { ExtUtils::MakeMaker->VERSION(6.52) };
+
+$WriteMakefileArgs{INSTALLDIRS} = 'perl'
+    if $] >= 5.009005 && $] <= 5.011000;
 
 WriteMakefile(%WriteMakefileArgs);
 

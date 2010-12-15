@@ -1,7 +1,7 @@
 
 
 This archive contains the distribution Env,
-version 1.01:
+version 1.02:
 
   perl module that imports environment variables as scalars or arrays
 

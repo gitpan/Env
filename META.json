@@ -40,7 +40,7 @@
          "web" : "http://github.com/rafl/env"
       }
    },
-   "version" : "1.01",
+   "version" : "1.02",
    "x_Dist_Zilla" : {
       "plugins" : [
          {
@@ -112,6 +112,11 @@
             "class" : "Dist::Zilla::Plugin::UploadToCPAN",
             "name" : "@Basic/UploadToCPAN",
             "version" : "4.102346"
+         },
+         {
+            "class" : "Dist::Zilla::Plugin::DualLife",
+            "name" : "DualLife",
+            "version" : "0.01"
          },
          {
             "class" : "Dist::Zilla::Plugin::MetaConfig",

@@ -20,7 +20,7 @@ resources:
   bugtracker: http://rt.perl.org/rt3/
   homepage: http://search.cpan.org/dist/Env
   repository: git://github.com/rafl/env.git
-version: 1.01
+version: 1.02
 x_Dist_Zilla:
   plugins:
     -
@@ -79,6 +79,10 @@ x_Dist_Zilla:
       class: Dist::Zilla::Plugin::UploadToCPAN
       name: '@Basic/UploadToCPAN'
       version: 4.102346
+    -
+      class: Dist::Zilla::Plugin::DualLife
+      name: DualLife
+      version: 0.01
     -
       class: Dist::Zilla::Plugin::MetaConfig
       name: MetaConfig
