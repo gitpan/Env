@@ -4,7 +4,7 @@ use warnings;
 
 
 
-use ExtUtils::MakeMaker 6.31;
+use ExtUtils::MakeMaker 6.30;
 
 
 
@@ -13,7 +13,7 @@ my %WriteMakefileArgs = (
   'AUTHOR' => 'Chip Salzenberg <chip@fin.uucp>, Gregor N. Purdy <gregor@focusresearch.com>, The Perl 5 Porters',
   'BUILD_REQUIRES' => {},
   'CONFIGURE_REQUIRES' => {
-    'ExtUtils::MakeMaker' => '6.31'
+    'ExtUtils::MakeMaker' => '6.30'
   },
   'DISTNAME' => 'Env',
   'EXE_FILES' => [],
@@ -22,7 +22,7 @@ my %WriteMakefileArgs = (
   'PREREQ_PM' => {
     'Tie::Array' => '0'
   },
-  'VERSION' => '1.02',
+  'VERSION' => '1.03',
   'test' => {
     'TESTS' => 't/*.t'
   }
