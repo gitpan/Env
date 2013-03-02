@@ -9,22 +9,22 @@ use ExtUtils::MakeMaker 6.30;
 
 
 my %WriteMakefileArgs = (
-  'ABSTRACT' => 'perl module that imports environment variables as scalars or arrays',
-  'AUTHOR' => 'Chip Salzenberg <chip@fin.uucp>, Gregor N. Purdy <gregor@focusresearch.com>, The Perl 5 Porters',
-  'BUILD_REQUIRES' => {},
-  'CONFIGURE_REQUIRES' => {
-    'ExtUtils::MakeMaker' => '6.30'
+  "ABSTRACT" => "perl module that imports environment variables as scalars or arrays",
+  "AUTHOR" => "Chip Salzenberg <chip\@fin.uucp>, Gregor N. Purdy <gregor\@focusresearch.com>, The Perl 5 Porters",
+  "BUILD_REQUIRES" => {},
+  "CONFIGURE_REQUIRES" => {
+    "ExtUtils::MakeMaker" => "6.30"
   },
-  'DISTNAME' => 'Env',
-  'EXE_FILES' => [],
-  'LICENSE' => 'perl',
-  'NAME' => 'Env',
-  'PREREQ_PM' => {
-    'Tie::Array' => '0'
+  "DISTNAME" => "Env",
+  "EXE_FILES" => [],
+  "LICENSE" => "perl",
+  "NAME" => "Env",
+  "PREREQ_PM" => {
+    "Tie::Array" => 0
   },
-  'VERSION' => '1.03',
-  'test' => {
-    'TESTS' => 't/*.t'
+  "VERSION" => "1.04",
+  "test" => {
+    "TESTS" => "t/*.t"
   }
 );
 
